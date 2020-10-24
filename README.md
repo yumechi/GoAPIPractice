@@ -1,0 +1,2 @@
+# GoAPIPractice
+GINでただのHello, Worldするだけ
