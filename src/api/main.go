@@ -1,6 +1,9 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"os"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
@@ -9,5 +12,10 @@ func main() {
 			"message": "puripuripuri~~~~",
 		})
 	})
-	_ = r.Run(":37301")
+	port := os.Getenv("PORT")
+	if len(port) == 0 {
+		_ = r.Run(":37301")
+	} else {
+		_ = r.Run(":" + port)
+	}
 }
