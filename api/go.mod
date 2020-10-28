@@ -1,4 +1,4 @@
-module example.com/go-mod-test
+module github.com/yumechi/GoAPIPractice
 
 go 1.15
 
