@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"os"
 	"local.packages/api/controller"
+	"os"
 )
 
 func main() {
@@ -12,6 +12,10 @@ func main() {
 	router.GET(
 		"/pri",
 		controller.PriGetting,
+	)
+	router.POST(
+		"/pri",
+		controller.PriPosting,
 	)
 
 	port := os.Getenv("PORT")
