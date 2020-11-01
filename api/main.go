@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"os"
-	"github.com/yumechi/GoAPIPractice/api/controller"
+	"local.packages/api/controller"
 )
 
 func main() {
